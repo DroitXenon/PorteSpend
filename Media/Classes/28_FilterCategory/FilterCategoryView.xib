@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilterCategoryView" customModule="app" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonView" destination="0hk-x7-CXP" id="1ns-KQ-45o"/>
+                <outlet property="tableView" destination="5ul-Hd-QFY" id="RnJ-4k-wES"/>
+                <outlet property="view" destination="SE6-2d-6QE" id="s2e-cz-Kx4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="SE6-2d-6QE">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" allowsMultipleSelection="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5ul-Hd-QFY">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="lDr-80-nSD"/>
+                        <outlet property="delegate" destination="-1" id="f4b-N3-nQn"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hk-x7-CXP">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <color key="backgroundColor" name="Theme"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Enb-Wo-2x6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="View 0 videos">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="actionViewVideos:" destination="-1" eventType="touchUpInside" id="eaK-YP-HMK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="0hk-x7-CXP" firstAttribute="leading" secondItem="BPC-dO-h6j" secondAttribute="leading" id="4nn-CN-trv"/>
+                <constraint firstItem="5ul-Hd-QFY" firstAttribute="leading" secondItem="BPC-dO-h6j" secondAttribute="leading" id="DhC-qH-zxh"/>
+                <constraint firstItem="0hk-x7-CXP" firstAttribute="top" secondItem="5ul-Hd-QFY" secondAttribute="bottom" id="GBr-Jb-7ZO"/>
+                <constraint firstItem="BPC-dO-h6j" firstAttribute="trailing" secondItem="5ul-Hd-QFY" secondAttribute="trailing" id="Zmp-3D-bNb"/>
+                <constraint firstItem="BPC-dO-h6j" firstAttribute="bottom" secondItem="0hk-x7-CXP" secondAttribute="bottom" id="aCe-jR-GYd"/>
+                <constraint firstItem="5ul-Hd-QFY" firstAttribute="top" secondItem="BPC-dO-h6j" secondAttribute="top" id="doE-re-klT"/>
+                <constraint firstItem="BPC-dO-h6j" firstAttribute="trailing" secondItem="0hk-x7-CXP" secondAttribute="trailing" id="m4r-RR-fgZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="BPC-dO-h6j"/>
+            <point key="canvasLocation" x="139" y="137"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Theme">
+            <color red="0.80000000000000004" green="0.0" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChooseGenresView" customModule="app" customModuleProvider="target">
+            <connections>
+                <outlet property="magneticView" destination="hWV-LF-Z5L" id="MOH-bc-mx1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cH6-A1-v7x">
+                    <rect key="frame" x="0.0" y="1" width="320" height="88"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="0Gs-ve-KOP">
+                            <rect key="frame" x="15" y="0.0" width="290" height="66"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gno-L8-Qz4">
+                                    <rect key="frame" x="0.0" y="0.0" width="105.5" height="44"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="32"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose favourite genres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9M-a0-nWv">
+                                    <rect key="frame" x="0.0" y="48" width="167.5" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="0Gs-ve-KOP" secondAttribute="trailing" constant="15" id="4yg-QA-eA9"/>
+                        <constraint firstItem="0Gs-ve-KOP" firstAttribute="leading" secondItem="cH6-A1-v7x" secondAttribute="leading" constant="15" id="CTs-5w-Ok3"/>
+                        <constraint firstAttribute="bottom" secondItem="0Gs-ve-KOP" secondAttribute="bottom" constant="22" id="YHu-L0-ZQj"/>
+                        <constraint firstItem="0Gs-ve-KOP" firstAttribute="top" secondItem="cH6-A1-v7x" secondAttribute="top" id="m7h-RG-LKo"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWV-LF-Z5L" customClass="MagneticView" customModule="Magnetic">
+                    <rect key="frame" x="0.0" y="89" width="320" height="479"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Wmq-sI-qhE"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hWV-LF-Z5L" secondAttribute="bottom" id="0l0-iy-OGD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hWV-LF-Z5L" secondAttribute="trailing" id="83I-6b-Feq"/>
+                <constraint firstItem="cH6-A1-v7x" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="1" id="POb-aY-xgG"/>
+                <constraint firstItem="cH6-A1-v7x" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YI7-4R-bPn"/>
+                <constraint firstItem="hWV-LF-Z5L" firstAttribute="top" secondItem="cH6-A1-v7x" secondAttribute="bottom" id="cQy-9Y-Aza"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cH6-A1-v7x" secondAttribute="trailing" id="vss-Ja-0UU"/>
+                <constraint firstItem="hWV-LF-Z5L" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xTW-UJ-tuH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="132.68365817091455"/>
+        </view>
+    </objects>
+</document>

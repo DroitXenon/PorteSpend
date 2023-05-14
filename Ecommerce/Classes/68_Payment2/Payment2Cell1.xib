@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Payment2Cell1" rowHeight="80" id="Mvk-7r-j7W" customClass="Payment2Cell1" customModule="app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mvk-7r-j7W" id="aAD-mi-ncK">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hAi-cU-DQ0">
+                        <rect key="frame" x="15" y="5" width="290" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcU-SI-vUX">
+                                <rect key="frame" x="10" y="10" width="44.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EXi-SX-YOn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="O70-1h-fpY">
+                                <rect key="frame" x="10" y="40" width="34.5" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="rdr-qU-uaG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" highlightedImage="largecircle.fill.circle" translatesAutoresizingMaskIntoConstraints="NO" id="Zbi-Ba-kzI">
+                                <rect key="frame" x="260" y="25.5" width="20" height="19"/>
+                                <color key="tintColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="C6T-db-bXz"/>
+                                    <constraint firstAttribute="height" constant="20" id="NWK-bf-oyk"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gcU-SI-vUX" firstAttribute="leading" secondItem="hAi-cU-DQ0" secondAttribute="leading" constant="10" id="Yzh-6h-8wc"/>
+                            <constraint firstAttribute="trailing" secondItem="Zbi-Ba-kzI" secondAttribute="trailing" constant="10" id="bCc-zn-Y3d"/>
+                            <constraint firstItem="O70-1h-fpY" firstAttribute="top" secondItem="gcU-SI-vUX" secondAttribute="bottom" id="drG-tS-zsI"/>
+                            <constraint firstItem="Zbi-Ba-kzI" firstAttribute="centerY" secondItem="hAi-cU-DQ0" secondAttribute="centerY" id="mNe-XB-gpN"/>
+                            <constraint firstItem="gcU-SI-vUX" firstAttribute="top" secondItem="hAi-cU-DQ0" secondAttribute="top" constant="10" id="ozA-Kd-y6B"/>
+                            <constraint firstItem="O70-1h-fpY" firstAttribute="leading" secondItem="gcU-SI-vUX" secondAttribute="leading" id="tIk-NZ-7Mx"/>
+                            <constraint firstAttribute="bottom" secondItem="O70-1h-fpY" secondAttribute="bottom" constant="10" id="tfn-0f-umY"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="hAi-cU-DQ0" firstAttribute="top" secondItem="aAD-mi-ncK" secondAttribute="top" constant="5" id="7tz-x5-bdZ"/>
+                    <constraint firstAttribute="bottom" secondItem="hAi-cU-DQ0" secondAttribute="bottom" constant="5" id="MaE-GT-oV7"/>
+                    <constraint firstAttribute="trailing" secondItem="hAi-cU-DQ0" secondAttribute="trailing" constant="15" id="iJA-YH-UHL"/>
+                    <constraint firstItem="hAi-cU-DQ0" firstAttribute="leading" secondItem="aAD-mi-ncK" secondAttribute="leading" constant="15" id="lx4-3m-h9O"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="Uu7-w2-Wlu"/>
+            <connections>
+                <outlet property="imageSelected" destination="Zbi-Ba-kzI" id="Cii-kP-m41"/>
+                <outlet property="labelEmail" destination="O70-1h-fpY" id="Zvp-uE-uKz"/>
+                <outlet property="labelName" destination="gcU-SI-vUX" id="OQh-C7-KcY"/>
+                <outlet property="viewBackground" destination="hAi-cU-DQ0" id="nEY-P5-4Oq"/>
+            </connections>
+            <point key="canvasLocation" x="44.927536231884062" y="143.30357142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="circle.fill" catalog="system" width="64" height="60"/>
+        <image name="largecircle.fill.circle" catalog="system" width="64" height="60"/>
+    </resources>
+</document>

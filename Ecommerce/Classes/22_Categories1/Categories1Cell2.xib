@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Categories1Cell2" rowHeight="80" id="Ove-Xu-Q8x" customClass="Categories1Cell2" customModule="app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ove-Xu-Q8x" id="Zdb-2y-nBz">
+                <rect key="frame" x="0.0" y="0.0" width="331" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ek5-vA-0bW">
+                        <rect key="frame" x="15" y="5" width="301" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfS-kG-Otf">
+                                <rect key="frame" x="15" y="15" width="251" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="items" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoI-xv-8Iq">
+                                <rect key="frame" x="15" y="36.5" width="251" height="18.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ziU-2D-1RC">
+                                <rect key="frame" x="276" y="29.5" width="15" height="11.5"/>
+                                <color key="tintColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="Arc-Vm-181"/>
+                                    <constraint firstAttribute="height" constant="15" id="Q0x-g5-Nap"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eoI-xv-8Iq" firstAttribute="top" secondItem="DfS-kG-Otf" secondAttribute="bottom" id="1wo-jL-kV5"/>
+                            <constraint firstItem="ziU-2D-1RC" firstAttribute="leading" secondItem="DfS-kG-Otf" secondAttribute="trailing" constant="10" id="2Ec-5a-a8H"/>
+                            <constraint firstItem="eoI-xv-8Iq" firstAttribute="leading" secondItem="DfS-kG-Otf" secondAttribute="leading" id="3JO-LQ-EOC"/>
+                            <constraint firstAttribute="trailing" secondItem="ziU-2D-1RC" secondAttribute="trailing" constant="10" id="EpZ-Rf-tvl"/>
+                            <constraint firstItem="DfS-kG-Otf" firstAttribute="top" secondItem="ek5-vA-0bW" secondAttribute="top" constant="15" id="FSE-Vn-7vf"/>
+                            <constraint firstItem="eoI-xv-8Iq" firstAttribute="height" secondItem="DfS-kG-Otf" secondAttribute="height" multiplier="0.85" id="I4P-9T-FJ3"/>
+                            <constraint firstItem="DfS-kG-Otf" firstAttribute="leading" secondItem="ek5-vA-0bW" secondAttribute="leading" constant="15" id="IWg-95-m77"/>
+                            <constraint firstItem="eoI-xv-8Iq" firstAttribute="trailing" secondItem="DfS-kG-Otf" secondAttribute="trailing" id="Oak-lN-TMi"/>
+                            <constraint firstAttribute="bottom" secondItem="eoI-xv-8Iq" secondAttribute="bottom" constant="15" id="YsK-Nd-kvy"/>
+                            <constraint firstItem="ziU-2D-1RC" firstAttribute="centerY" secondItem="ek5-vA-0bW" secondAttribute="centerY" id="ohr-vB-eaL"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ek5-vA-0bW" secondAttribute="bottom" constant="5" id="AdS-HT-qLv"/>
+                    <constraint firstItem="ek5-vA-0bW" firstAttribute="top" secondItem="Zdb-2y-nBz" secondAttribute="top" constant="5" id="MVK-2m-4Ls"/>
+                    <constraint firstAttribute="trailing" secondItem="ek5-vA-0bW" secondAttribute="trailing" constant="15" id="TyX-uK-YL8"/>
+                    <constraint firstItem="ek5-vA-0bW" firstAttribute="leading" secondItem="Zdb-2y-nBz" secondAttribute="leading" constant="15" id="eAf-Db-Lpa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="AZy-pe-mGI"/>
+            <connections>
+                <outlet property="labelItems" destination="eoI-xv-8Iq" id="81q-bz-PAZ"/>
+                <outlet property="labelName" destination="DfS-kG-Otf" id="AXv-Mx-gKX"/>
+            </connections>
+            <point key="canvasLocation" x="139.85507246376812" y="166.74107142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.right" catalog="system" width="48" height="64"/>
+    </resources>
+</document>

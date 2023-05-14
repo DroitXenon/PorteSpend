@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChartsAlbumsView" customModule="app" customModuleProvider="target">
+            <connections>
+                <outlet property="segmentControl" destination="2Zy-RA-AgP" id="U7I-dW-H4l"/>
+                <outlet property="tableView" destination="3MK-41-aN4" id="bUL-yC-Iyd"/>
+                <outlet property="view" destination="A1Y-gj-Yku" id="g1S-dZ-zQs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="A1Y-gj-Yku">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3MK-41-aN4">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="lqU-p1-biE"/>
+                        <outlet property="delegate" destination="-1" id="b60-ai-61J"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSt-qX-qfg">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2Zy-RA-AgP">
+                            <rect key="frame" x="15" y="15" width="290" height="29"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="Esg-NT-j8j"/>
+                            </constraints>
+                            <segments>
+                                <segment title="Tab"/>
+                                <segment title="Tab"/>
+                            </segments>
+                            <color key="selectedSegmentTintColor" name="Theme"/>
+                            <connections>
+                                <action selector="actionSegment:" destination="-1" eventType="valueChanged" id="oGT-8f-KOE"/>
+                            </connections>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="2Zy-RA-AgP" firstAttribute="top" secondItem="cSt-qX-qfg" secondAttribute="top" constant="15" id="BjE-RU-Eee"/>
+                        <constraint firstAttribute="bottom" secondItem="2Zy-RA-AgP" secondAttribute="bottom" constant="15" id="S9E-a9-OPc"/>
+                        <constraint firstItem="2Zy-RA-AgP" firstAttribute="leading" secondItem="cSt-qX-qfg" secondAttribute="leading" constant="15" id="TCq-m2-yj8"/>
+                        <constraint firstAttribute="trailing" secondItem="2Zy-RA-AgP" secondAttribute="trailing" constant="15" id="VQG-Ro-0yZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="bt9-77-Fed" firstAttribute="trailing" secondItem="cSt-qX-qfg" secondAttribute="trailing" id="5WZ-Ub-4mJ"/>
+                <constraint firstItem="bt9-77-Fed" firstAttribute="trailing" secondItem="3MK-41-aN4" secondAttribute="trailing" id="Bsi-a7-5TN"/>
+                <constraint firstItem="3MK-41-aN4" firstAttribute="top" secondItem="bt9-77-Fed" secondAttribute="top" id="FpD-ZH-M3S"/>
+                <constraint firstAttribute="bottom" secondItem="3MK-41-aN4" secondAttribute="bottom" id="IYd-gt-djp"/>
+                <constraint firstItem="3MK-41-aN4" firstAttribute="leading" secondItem="bt9-77-Fed" secondAttribute="leading" id="cCC-Ou-guP"/>
+                <constraint firstItem="cSt-qX-qfg" firstAttribute="leading" secondItem="bt9-77-Fed" secondAttribute="leading" id="hbc-za-GBA"/>
+                <constraint firstItem="cSt-qX-qfg" firstAttribute="top" secondItem="bt9-77-Fed" secondAttribute="top" id="uQS-o3-7RR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="bt9-77-Fed"/>
+            <point key="canvasLocation" x="138.40000000000001" y="134.48275862068968"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Theme">
+            <color red="0.0" green="0.60784313725490191" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SettingsCell" id="nTH-Ck-dzp" customClass="SettingsCell" customModule="app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nTH-Ck-dzp" id="GvE-mb-hfR">
+                <rect key="frame" x="0.0" y="0.0" width="293" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="YUo-c0-Yh1">
+                        <rect key="frame" x="15" y="15" width="271" height="14"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TItle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Soi-AO-85B">
+                                <rect key="frame" x="0.0" y="0.0" width="129.5" height="14"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Value" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijt-Bi-b98">
+                                <rect key="frame" x="141.5" y="0.0" width="129.5" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iGr-dn-Qla">
+                        <rect key="frame" x="235" y="6.5" width="53" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="GDD-od-qlY"/>
+                            <constraint firstAttribute="width" constant="51" id="bHM-Lc-EGi"/>
+                        </constraints>
+                        <color key="onTintColor" name="Theme"/>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iGr-dn-Qla" firstAttribute="centerY" secondItem="YUo-c0-Yh1" secondAttribute="centerY" id="Gzu-Ld-ZeA"/>
+                    <constraint firstItem="YUo-c0-Yh1" firstAttribute="leading" secondItem="GvE-mb-hfR" secondAttribute="leading" constant="15" id="P53-Se-9hh"/>
+                    <constraint firstItem="YUo-c0-Yh1" firstAttribute="top" secondItem="GvE-mb-hfR" secondAttribute="top" constant="15" id="Ty2-Op-Hp0"/>
+                    <constraint firstAttribute="bottom" secondItem="YUo-c0-Yh1" secondAttribute="bottom" constant="15" id="oKW-D5-fea"/>
+                    <constraint firstAttribute="trailing" secondItem="YUo-c0-Yh1" secondAttribute="trailing" constant="8" id="qPa-Yb-v8O"/>
+                    <constraint firstItem="iGr-dn-Qla" firstAttribute="trailing" secondItem="YUo-c0-Yh1" secondAttribute="trailing" id="zOu-dC-qI0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="sfZ-wW-UKM"/>
+            <connections>
+                <outlet property="labelTitle" destination="Soi-AO-85B" id="ACW-n7-2mg"/>
+                <outlet property="labelValue" destination="ijt-Bi-b98" id="QyQ-X6-sV3"/>
+                <outlet property="switchButton" destination="iGr-dn-Qla" id="PLU-Nu-NDW"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="139.95535714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Theme">
+            <color red="0.80000000000000004" green="0.0" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

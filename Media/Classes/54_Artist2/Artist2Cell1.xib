@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Artist2Cell1" id="5Hw-fF-XXg" customClass="Artist2Cell1" customModule="app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="332" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="332" height="66"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music.note" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6jF-50-O2w">
+                        <rect key="frame" x="15" y="7" width="50" height="52"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemFillColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.50196078430000002" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="53" id="3Ro-V7-0oF"/>
+                            <constraint firstAttribute="width" constant="50" id="Abs-OQ-KJY"/>
+                        </constraints>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Haq-Nr-srO">
+                        <rect key="frame" x="80" y="12" width="35.5" height="42"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ja5-7k-8Yf">
+                                <rect key="frame" x="0.0" y="0.0" width="35.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L53-7S-Len">
+                                <rect key="frame" x="0.0" y="22" width="35.5" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOA-h0-G4R">
+                        <rect key="frame" x="295" y="17" width="32" height="32"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="G47-zV-gJq"/>
+                            <constraint firstAttribute="width" constant="32" id="QXr-6d-x5J"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <state key="normal" image="text.badge.plus" catalog="system">
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="14"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="Border"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="actionOption:" destination="5Hw-fF-XXg" eventType="touchUpInside" id="po7-8w-iFT"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="6jF-50-O2w" firstAttribute="centerY" secondItem="Haq-Nr-srO" secondAttribute="centerY" id="6Jm-Z1-bOU"/>
+                <constraint firstItem="6jF-50-O2w" firstAttribute="leading" secondItem="5Hw-fF-XXg" secondAttribute="leading" constant="15" id="ART-Pi-y3g"/>
+                <constraint firstAttribute="bottom" secondItem="Haq-Nr-srO" secondAttribute="bottom" constant="12" id="Arx-7g-dkM"/>
+                <constraint firstAttribute="trailing" secondItem="WOA-h0-G4R" secondAttribute="trailing" constant="5" id="Aur-HA-OdW"/>
+                <constraint firstItem="WOA-h0-G4R" firstAttribute="centerY" secondItem="Haq-Nr-srO" secondAttribute="centerY" id="Bb7-RH-uQ6"/>
+                <constraint firstItem="Haq-Nr-srO" firstAttribute="leading" secondItem="6jF-50-O2w" secondAttribute="trailing" constant="15" id="BiC-bf-vCv"/>
+                <constraint firstItem="WOA-h0-G4R" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Haq-Nr-srO" secondAttribute="trailing" constant="8" id="KHA-RL-FgV"/>
+                <constraint firstItem="Haq-Nr-srO" firstAttribute="top" secondItem="5Hw-fF-XXg" secondAttribute="top" constant="12" id="soH-Eg-gvS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SdR-k9-tbU"/>
+            <size key="customSize" width="332" height="72"/>
+            <connections>
+                <outlet property="buttonOption" destination="WOA-h0-G4R" id="LgU-7i-78E"/>
+                <outlet property="labelArtist" destination="L53-7S-Len" id="vn6-hF-RrL"/>
+                <outlet property="labelTitle" destination="Ja5-7k-8Yf" id="wql-kx-fEy"/>
+            </connections>
+            <point key="canvasLocation" x="198.55072463768118" y="155.35714285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="music.note" catalog="system" width="48" height="64"/>
+        <image name="text.badge.plus" catalog="system" width="64" height="54"/>
+        <namedColor name="Border">
+            <color red="0.55699998140335083" green="0.55699998140335083" blue="0.57599997520446777" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

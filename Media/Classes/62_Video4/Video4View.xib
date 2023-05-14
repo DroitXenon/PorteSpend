@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Video4View" customModule="app" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonPlayPause" destination="59r-kg-msg" id="3aR-Un-8YJ"/>
+                <outlet property="imageViewVideo" destination="6Kd-cb-tVV" id="Z2f-kd-bTE"/>
+                <outlet property="labelTimeElapsed" destination="XUk-yT-AQ2" id="jpd-Es-tee"/>
+                <outlet property="slider" destination="KGi-PY-1dx" id="a7b-Tz-30B"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Kd-cb-tVV">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" systemColor="tertiarySystemFillColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.50196078430000002" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tBO-kI-Ijo" userLabel="Gradient View">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" name="Gradient"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59r-kg-msg">
+                    <rect key="frame" x="128" y="252" width="64" height="64"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="YwG-aw-oNX"/>
+                        <constraint firstAttribute="height" constant="64" id="xVo-gN-XF7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <state key="normal" image="play.fill" catalog="system"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" name="Border"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="32"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="actionPlayPause:" destination="-1" eventType="touchUpInside" id="Lob-Gx-Dbb"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00 - 00:00" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUk-yT-AQ2">
+                    <rect key="frame" x="15" y="497" width="91.5" height="17"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szA-2W-nNH">
+                    <rect key="frame" x="283" y="493" width="22" height="25"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="rectangle.and.arrow.up.right.and.arrow.down.left" catalog="system"/>
+                    <connections>
+                        <action selector="actionExpandVideo:" destination="-1" eventType="touchUpInside" id="sNs-F4-anS"/>
+                    </connections>
+                </button>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KGi-PY-1dx">
+                    <rect key="frame" x="13" y="523" width="294" height="31"/>
+                    <color key="tintColor" name="Theme"/>
+                </slider>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KGi-PY-1dx" secondAttribute="trailing" constant="15" id="3C4-RG-FcI"/>
+                <constraint firstItem="tBO-kI-Ijo" firstAttribute="bottom" secondItem="6Kd-cb-tVV" secondAttribute="bottom" id="3pH-M7-NlL"/>
+                <constraint firstItem="XUk-yT-AQ2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="EiR-Yj-2E0"/>
+                <constraint firstItem="6Kd-cb-tVV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LKn-tt-QoU"/>
+                <constraint firstAttribute="trailing" secondItem="6Kd-cb-tVV" secondAttribute="trailing" id="VVQ-Su-7bw"/>
+                <constraint firstItem="59r-kg-msg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WMR-eN-tlf"/>
+                <constraint firstItem="6Kd-cb-tVV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YPH-Bp-1Hn"/>
+                <constraint firstItem="59r-kg-msg" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Zjl-tW-Shs"/>
+                <constraint firstItem="KGi-PY-1dx" firstAttribute="top" secondItem="szA-2W-nNH" secondAttribute="bottom" constant="5" id="a2O-to-MmN"/>
+                <constraint firstItem="tBO-kI-Ijo" firstAttribute="leading" secondItem="6Kd-cb-tVV" secondAttribute="leading" id="c6e-SS-Twf"/>
+                <constraint firstAttribute="bottom" secondItem="6Kd-cb-tVV" secondAttribute="bottom" id="dmn-M3-D3Q"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="szA-2W-nNH" secondAttribute="trailing" constant="15" id="eIN-QC-mJv"/>
+                <constraint firstItem="tBO-kI-Ijo" firstAttribute="trailing" secondItem="6Kd-cb-tVV" secondAttribute="trailing" id="nLB-Tw-PBA"/>
+                <constraint firstItem="KGi-PY-1dx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="oC5-lY-vcc"/>
+                <constraint firstItem="XUk-yT-AQ2" firstAttribute="centerY" secondItem="szA-2W-nNH" secondAttribute="centerY" id="oWO-be-2Xn"/>
+                <constraint firstItem="tBO-kI-Ijo" firstAttribute="top" secondItem="6Kd-cb-tVV" secondAttribute="top" id="wiL-kb-SdG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="KGi-PY-1dx" secondAttribute="bottom" constant="15" id="zhx-2d-L4N"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="128.18590704647679"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="play.fill" catalog="system" width="58" height="64"/>
+        <image name="rectangle.and.arrow.up.right.and.arrow.down.left" catalog="system" width="60" height="64"/>
+        <namedColor name="Border">
+            <color red="0.55699998140335083" green="0.55699998140335083" blue="0.57599997520446777" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gradient">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.30000001192092896" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Theme">
+            <color red="0.0" green="0.60784313725490191" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

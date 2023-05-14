@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AlbumsCell" id="lyV-ur-LOa" customClass="AlbumsCell" customModule="app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="165" height="194"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="165" height="194"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="XAJ-IY-ove">
+                        <rect key="frame" x="0.0" y="0.0" width="165" height="135.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rp8-tH-Ksq">
+                                <rect key="frame" x="0.0" y="0.0" width="165" height="135.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rp8-tH-Ksq" secondAttribute="trailing" id="HLo-Qx-rcH"/>
+                            <constraint firstItem="rp8-tH-Ksq" firstAttribute="leading" secondItem="XAJ-IY-ove" secondAttribute="leading" id="VjS-Bi-kkT"/>
+                            <constraint firstAttribute="bottom" secondItem="rp8-tH-Ksq" secondAttribute="bottom" id="pjo-dk-ONE"/>
+                            <constraint firstItem="rp8-tH-Ksq" firstAttribute="top" secondItem="XAJ-IY-ove" secondAttribute="top" id="ujB-gs-E57"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iu-EU-E9H">
+                        <rect key="frame" x="123" y="10" width="32" height="32"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="RA3-4N-v1R"/>
+                            <constraint firstAttribute="width" constant="32" id="wWB-J7-6aG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <state key="normal" image="ellipsis" catalog="system"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="Border"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="actionOption:" destination="lyV-ur-LOa" eventType="touchUpInside" id="0Ds-p8-13p"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciI-bB-wlB">
+                        <rect key="frame" x="0.0" y="146.5" width="165" height="17"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkV-Xt-jxW">
+                        <rect key="frame" x="0.0" y="171.5" width="165" height="14.5"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="CkV-Xt-jxW" firstAttribute="top" secondItem="ciI-bB-wlB" secondAttribute="bottom" constant="8" id="7Bc-nH-fI2"/>
+                <constraint firstItem="4iu-EU-E9H" firstAttribute="top" secondItem="lyV-ur-LOa" secondAttribute="top" constant="10" id="AhU-ny-kO2"/>
+                <constraint firstAttribute="trailing" secondItem="XAJ-IY-ove" secondAttribute="trailing" id="IBj-U5-VFI"/>
+                <constraint firstItem="ciI-bB-wlB" firstAttribute="leading" secondItem="lyV-ur-LOa" secondAttribute="leading" id="Mea-qj-rwn"/>
+                <constraint firstAttribute="trailing" secondItem="ciI-bB-wlB" secondAttribute="trailing" id="Q7y-0r-fdf"/>
+                <constraint firstAttribute="bottom" secondItem="CkV-Xt-jxW" secondAttribute="bottom" constant="8" id="QMU-Gm-PQl"/>
+                <constraint firstItem="CkV-Xt-jxW" firstAttribute="leading" secondItem="lyV-ur-LOa" secondAttribute="leading" id="VnM-7h-QL9"/>
+                <constraint firstAttribute="trailing" secondItem="CkV-Xt-jxW" secondAttribute="trailing" id="Zgk-VH-PHg"/>
+                <constraint firstAttribute="trailing" secondItem="4iu-EU-E9H" secondAttribute="trailing" constant="10" id="eyB-Gk-Ezn"/>
+                <constraint firstItem="ciI-bB-wlB" firstAttribute="top" secondItem="XAJ-IY-ove" secondAttribute="bottom" constant="11" id="gt3-nH-YU1"/>
+                <constraint firstItem="XAJ-IY-ove" firstAttribute="leading" secondItem="lyV-ur-LOa" secondAttribute="leading" id="nKz-zK-FnX"/>
+                <constraint firstItem="XAJ-IY-ove" firstAttribute="top" secondItem="lyV-ur-LOa" secondAttribute="top" id="tnf-wg-OvB"/>
+            </constraints>
+            <size key="customSize" width="165" height="194"/>
+            <connections>
+                <outlet property="buttonOption" destination="4iu-EU-E9H" id="8LY-yt-Pt5"/>
+                <outlet property="imageView" destination="rp8-tH-Ksq" id="1xS-CM-85q"/>
+                <outlet property="labelArtist" destination="CkV-Xt-jxW" id="Vgw-4C-Lhg"/>
+                <outlet property="labelSong" destination="ciI-bB-wlB" id="KSU-S5-LkK"/>
+            </connections>
+            <point key="canvasLocation" x="130" y="154"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ellipsis" catalog="system" width="64" height="18"/>
+        <namedColor name="Border">
+            <color red="0.55699998140335083" green="0.55699998140335083" blue="0.57599997520446777" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

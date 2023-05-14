@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Butterfly1View" customModule="Fitness" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="jc4-CU-LjA" id="f1E-YC-xlG"/>
+                <outlet property="pageControl" destination="8cz-2k-1w0" id="JWl-pD-hbk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="jc4-CU-LjA">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lpD-oM-ILG">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Zcm-vu-z8k"/>
+                        <outlet property="delegate" destination="-1" id="HvJ-Kn-9Jd"/>
+                    </connections>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="8cz-2k-1w0">
+                    <rect key="frame" x="140.5" y="518" width="39" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Gmb-B0-816"/>
+                    </constraints>
+                    <color key="pageIndicatorTintColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="currentPageIndicatorTintColor" name="Theme"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="8cz-2k-1w0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1a4-Pu-dsK"/>
+                <constraint firstAttribute="bottom" secondItem="jc4-CU-LjA" secondAttribute="bottom" id="8Yg-YK-LOV"/>
+                <constraint firstAttribute="trailing" secondItem="jc4-CU-LjA" secondAttribute="trailing" id="RfQ-kO-Wcw"/>
+                <constraint firstItem="jc4-CU-LjA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="exJ-8E-wGk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8cz-2k-1w0" secondAttribute="bottom" constant="20" id="fP4-R7-MMJ"/>
+                <constraint firstItem="jc4-CU-LjA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jO3-tJ-Wj1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="129.375" y="137.32394366197184"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Theme">
+            <color red="0.51800000667572021" green="0.18799999356269836" blue="0.79600000381469727" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

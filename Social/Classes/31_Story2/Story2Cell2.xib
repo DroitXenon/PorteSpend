@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="xHx-qo-NOV" customClass="Story2Cell2" customModule="app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="226" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="226" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sce-mf-kBX">
+                        <rect key="frame" x="0.0" y="0.0" width="226" height="50"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Vc0-Db-BGp">
+                                <rect key="frame" x="0.0" y="24" width="226" height="2"/>
+                                <color key="progressTintColor" name="Theme"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vc0-Db-BGp" firstAttribute="leading" secondItem="sce-mf-kBX" secondAttribute="leading" id="8qJ-1m-jMw"/>
+                            <constraint firstItem="Vc0-Db-BGp" firstAttribute="centerY" secondItem="sce-mf-kBX" secondAttribute="centerY" id="gCP-ql-DOg"/>
+                            <constraint firstAttribute="trailing" secondItem="Vc0-Db-BGp" secondAttribute="trailing" id="qmr-Hv-To0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="sce-mf-kBX" firstAttribute="top" secondItem="xHx-qo-NOV" secondAttribute="top" id="0hx-n3-45i"/>
+                <constraint firstAttribute="bottom" secondItem="sce-mf-kBX" secondAttribute="bottom" id="AdN-NC-cEQ"/>
+                <constraint firstAttribute="trailing" secondItem="sce-mf-kBX" secondAttribute="trailing" id="u7n-BN-Se6"/>
+                <constraint firstItem="sce-mf-kBX" firstAttribute="leading" secondItem="xHx-qo-NOV" secondAttribute="leading" id="uod-HU-Vcu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="A3v-pj-35d"/>
+            <size key="customSize" width="226" height="50"/>
+            <connections>
+                <outlet property="progressView" destination="Vc0-Db-BGp" id="EqI-y9-BDZ"/>
+            </connections>
+            <point key="canvasLocation" x="258.75" y="126.7605633802817"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Theme">
+            <color red="0.10196078431372549" green="0.68627450980392157" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CameraRollCell2" customModule="app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="218" height="204"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="218" height="204"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1eU-VY-FkM">
+                        <rect key="frame" x="0.0" y="0.0" width="218" height="204"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mo7-eR-uBs">
+                                <rect key="frame" x="0.0" y="0.0" width="218" height="204"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hu1-F9-fFr">
+                                <rect key="frame" x="193" y="5.5" width="20" height="19"/>
+                                <color key="tintColor" name="Theme"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="OAI-Z4-ffy"/>
+                                    <constraint firstAttribute="height" constant="20" id="lgB-9X-ZvL"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hu1-F9-fFr" firstAttribute="top" secondItem="1eU-VY-FkM" secondAttribute="top" constant="5" id="HC3-I0-1e2"/>
+                            <constraint firstItem="mo7-eR-uBs" firstAttribute="top" secondItem="1eU-VY-FkM" secondAttribute="top" id="RfM-YA-rUz"/>
+                            <constraint firstAttribute="trailing" secondItem="mo7-eR-uBs" secondAttribute="trailing" id="S5x-ZN-bxU"/>
+                            <constraint firstAttribute="trailing" secondItem="hu1-F9-fFr" secondAttribute="trailing" constant="5" id="Z94-pN-kv4"/>
+                            <constraint firstItem="mo7-eR-uBs" firstAttribute="leading" secondItem="1eU-VY-FkM" secondAttribute="leading" id="a64-d5-qB4"/>
+                            <constraint firstAttribute="bottom" secondItem="mo7-eR-uBs" secondAttribute="bottom" id="iuh-UP-aKS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="1eU-VY-FkM" secondAttribute="bottom" id="0l8-by-7tF"/>
+                <constraint firstItem="1eU-VY-FkM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2Es-Fi-2pS"/>
+                <constraint firstAttribute="trailing" secondItem="1eU-VY-FkM" secondAttribute="trailing" id="cQ8-C1-uxZ"/>
+                <constraint firstItem="1eU-VY-FkM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kCd-Zp-Z7h"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="218" height="204"/>
+            <connections>
+                <outlet property="imageGallery" destination="mo7-eR-uBs" id="vue-Xl-03D"/>
+                <outlet property="imageSelected" destination="hu1-F9-fFr" id="rQU-4s-c5e"/>
+            </connections>
+            <point key="canvasLocation" x="-159.375" y="133.09859154929578"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark.circle.fill" catalog="system" width="64" height="60"/>
+        <namedColor name="Theme">
+            <color red="0.0" green="0.32549019607843138" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

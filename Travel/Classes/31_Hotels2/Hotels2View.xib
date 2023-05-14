@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Hotels2View" customModule="app" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="AEl-vS-eGQ" id="US3-nN-58o"/>
+                <outlet property="view" destination="Jpn-Kq-jTe" id="5nl-aW-V7Z"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Jpn-Kq-jTe">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="OZJ-Jh-FkS">
+                    <rect key="frame" x="15" y="10" width="290" height="32"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjd-EN-djf">
+                            <rect key="frame" x="0.0" y="0.0" width="137.5" height="32"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bhc-6M-r8M">
+                                    <rect key="frame" x="0.0" y="0.0" width="137.5" height="32"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                    <inset key="titleEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="SORT BY">
+                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="actionSortBy:" destination="-1" eventType="touchUpInside" id="jbM-1H-6vz"/>
+                                    </connections>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line.horizontal.3.decrease" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Gn8-j9-Pye">
+                                    <rect key="frame" x="106.5" y="10" width="21" height="12"/>
+                                    <color key="tintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Bhc-6M-r8M" secondAttribute="trailing" id="FFa-y7-Fpv"/>
+                                <constraint firstItem="Bhc-6M-r8M" firstAttribute="top" secondItem="kjd-EN-djf" secondAttribute="top" id="Tbb-gj-lqx"/>
+                                <constraint firstItem="Bhc-6M-r8M" firstAttribute="leading" secondItem="kjd-EN-djf" secondAttribute="leading" id="Yva-Tj-MgW"/>
+                                <constraint firstItem="Gn8-j9-Pye" firstAttribute="centerY" secondItem="Bhc-6M-r8M" secondAttribute="centerY" id="nEI-e6-gyJ"/>
+                                <constraint firstItem="Gn8-j9-Pye" firstAttribute="trailing" secondItem="Bhc-6M-r8M" secondAttribute="trailing" constant="-10" id="nGR-1s-OHY"/>
+                                <constraint firstAttribute="bottom" secondItem="Bhc-6M-r8M" secondAttribute="bottom" id="yQA-n7-fk2"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="Border"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ObF-aj-rHI">
+                            <rect key="frame" x="152.5" y="0.0" width="137.5" height="32"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rfy-ce-LBZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="137.5" height="32"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                    <inset key="titleEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="FILTERS">
+                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="actionFilters:" destination="-1" eventType="touchUpInside" id="F7F-vA-i6k"/>
+                                    </connections>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slider.horizontal.3" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qEd-iw-4CD">
+                                    <rect key="frame" x="106.5" y="7.5" width="21" height="16.5"/>
+                                    <color key="tintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="Rfy-ce-LBZ" secondAttribute="bottom" id="5qZ-Pa-YIb"/>
+                                <constraint firstItem="Rfy-ce-LBZ" firstAttribute="leading" secondItem="ObF-aj-rHI" secondAttribute="leading" id="6Kg-wT-baC"/>
+                                <constraint firstItem="qEd-iw-4CD" firstAttribute="trailing" secondItem="Rfy-ce-LBZ" secondAttribute="trailing" constant="-10" id="VwP-hJ-wt8"/>
+                                <constraint firstItem="qEd-iw-4CD" firstAttribute="centerY" secondItem="Rfy-ce-LBZ" secondAttribute="centerY" id="llb-JZ-ihj"/>
+                                <constraint firstAttribute="trailing" secondItem="Rfy-ce-LBZ" secondAttribute="trailing" id="pfh-d6-33T"/>
+                                <constraint firstItem="Rfy-ce-LBZ" firstAttribute="top" secondItem="ObF-aj-rHI" secondAttribute="top" id="x1z-2c-Y4t"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="Border"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="3vJ-yO-rpJ"/>
+                    </constraints>
+                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AEl-vS-eGQ">
+                    <rect key="frame" x="0.0" y="57" width="320" height="511"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="CmV-sV-teE"/>
+                        <outlet property="delegate" destination="-1" id="ZNk-wk-Xig"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="AEl-vS-eGQ" firstAttribute="leading" secondItem="Jpn-Kq-jTe" secondAttribute="leading" id="Rvv-dp-gWC"/>
+                <constraint firstAttribute="bottom" secondItem="AEl-vS-eGQ" secondAttribute="bottom" id="WnU-Pm-XiY"/>
+                <constraint firstItem="AEl-vS-eGQ" firstAttribute="top" secondItem="OZJ-Jh-FkS" secondAttribute="bottom" constant="15" id="eee-Az-Euq"/>
+                <constraint firstItem="OZJ-Jh-FkS" firstAttribute="top" secondItem="wQm-5g-6KN" secondAttribute="top" constant="10" id="jJE-dy-fRI"/>
+                <constraint firstItem="OZJ-Jh-FkS" firstAttribute="leading" secondItem="wQm-5g-6KN" secondAttribute="leading" constant="15" id="rBw-S0-w8j"/>
+                <constraint firstItem="wQm-5g-6KN" firstAttribute="trailing" secondItem="OZJ-Jh-FkS" secondAttribute="trailing" constant="15" id="rbu-fX-adS"/>
+                <constraint firstAttribute="trailing" secondItem="AEl-vS-eGQ" secondAttribute="trailing" id="sjq-As-adF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="wQm-5g-6KN"/>
+            <point key="canvasLocation" x="138.40000000000001" y="123.68815592203899"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="line.horizontal.3.decrease" catalog="system" width="64" height="36"/>
+        <image name="slider.horizontal.3" catalog="system" width="64" height="50"/>
+        <namedColor name="Border">
+            <color red="0.55699998140335083" green="0.55699998140335083" blue="0.57599997520446777" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

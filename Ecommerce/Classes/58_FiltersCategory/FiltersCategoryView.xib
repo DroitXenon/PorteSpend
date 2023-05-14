@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FiltersCategoryView" customModule="app" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonViewItems" destination="D3x-ez-Dfz" id="p1y-qy-Fee"/>
+                <outlet property="searchBar" destination="XKY-dZ-ScV" id="xgB-bJ-GaC"/>
+                <outlet property="tableView" destination="idU-Ii-R7A" id="Epa-5L-TGf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ME-lh-LL4">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" allowsSelectionDuringEditing="YES" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="idU-Ii-R7A">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="513"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="sDv-hH-AOc"/>
+                                <outlet property="delegate" destination="-1" id="yAn-WQ-IFw"/>
+                            </connections>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3x-ez-Dfz">
+                            <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                            <color key="backgroundColor" name="Theme"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="ftl-Tp-Pmc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <state key="normal" title="View 0 Items"/>
+                            <connections>
+                                <action selector="actionViewItems:" destination="-1" eventType="touchUpInside" id="Lt3-gQ-Q3X"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="idU-Ii-R7A" firstAttribute="leading" secondItem="1ME-lh-LL4" secondAttribute="leading" id="1C8-Wx-O0h"/>
+                        <constraint firstAttribute="trailing" secondItem="D3x-ez-Dfz" secondAttribute="trailing" id="3ed-ht-Hrx"/>
+                        <constraint firstItem="D3x-ez-Dfz" firstAttribute="leading" secondItem="1ME-lh-LL4" secondAttribute="leading" id="GQF-Rq-16w"/>
+                        <constraint firstAttribute="trailing" secondItem="idU-Ii-R7A" secondAttribute="trailing" id="ZkT-Pu-IVV"/>
+                        <constraint firstAttribute="bottom" secondItem="D3x-ez-Dfz" secondAttribute="bottom" id="c9X-0v-UQ8"/>
+                        <constraint firstItem="idU-Ii-R7A" firstAttribute="top" secondItem="1ME-lh-LL4" secondAttribute="top" id="pU3-5T-T3Q"/>
+                        <constraint firstItem="D3x-ez-Dfz" firstAttribute="top" secondItem="idU-Ii-R7A" secondAttribute="bottom" constant="5" id="wNP-VZ-kNv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="1ME-lh-LL4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2dE-em-6bu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1ME-lh-LL4" secondAttribute="trailing" id="6E2-PE-ekA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1ME-lh-LL4" secondAttribute="bottom" id="EeS-FL-xeK"/>
+                <constraint firstItem="1ME-lh-LL4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="IbY-MM-McI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="139.880059970015"/>
+        </view>
+        <searchBar contentMode="redraw" placeholder="Search" id="XKY-dZ-ScV">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <textInputTraits key="textInputTraits"/>
+            <connections>
+                <outlet property="delegate" destination="-1" id="aJD-bk-m1m"/>
+            </connections>
+            <point key="canvasLocation" x="131" y="-217"/>
+        </searchBar>
+    </objects>
+    <resources>
+        <namedColor name="Theme">
+            <color red="0.26600000262260437" green="0.61599999666213989" blue="0.75999999046325684" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

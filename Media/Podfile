@@ -1,0 +1,13 @@
+platform :ios, '13.0'
+
+use_frameworks!
+
+inhibit_all_warnings!
+
+target 'app' do
+	pod 'IQKeyboardManagerSwift'
+	pod 'SkyFloatingLabelTextField'
+	pod 'UICircularProgressRing'
+	pod 'SoundWave'
+	pod 'Magnetic'
+end

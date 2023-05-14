@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="Categories5Cell" customModule="app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="182" height="246"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="182" height="246"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUt-jq-kIo">
+                        <rect key="frame" x="0.0" y="0.0" width="182" height="246"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mAk-4j-W7u">
+                                <rect key="frame" x="0.0" y="0.0" width="182" height="246"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemFillColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.50196078430000002" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qm1-Rx-fgy">
+                                <rect key="frame" x="0.0" y="0.0" width="182" height="246"/>
+                                <color key="backgroundColor" name="Gradient"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxX-Lx-uf3">
+                                <rect key="frame" x="142" y="10" width="30" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="C5M-jl-pjo"/>
+                                    <constraint firstAttribute="width" constant="30" id="Whm-IN-g0S"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" image="ellipsis" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jy4-KD-JJr">
+                                <rect key="frame" x="15" y="174" width="152" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="VRh-ps-8zw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 articles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ieg-iU-5d2">
+                                <rect key="frame" x="15" y="214" width="152" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mAk-4j-W7u" firstAttribute="leading" secondItem="wUt-jq-kIo" secondAttribute="leading" id="0fJ-rp-msK"/>
+                            <constraint firstItem="jy4-KD-JJr" firstAttribute="leading" secondItem="Ieg-iU-5d2" secondAttribute="leading" id="0ym-jq-Xf8"/>
+                            <constraint firstItem="mAk-4j-W7u" firstAttribute="top" secondItem="wUt-jq-kIo" secondAttribute="top" id="4MB-gh-LiK"/>
+                            <constraint firstItem="jy4-KD-JJr" firstAttribute="trailing" secondItem="Ieg-iU-5d2" secondAttribute="trailing" id="ANT-l5-Xfe"/>
+                            <constraint firstItem="Qm1-Rx-fgy" firstAttribute="top" secondItem="wUt-jq-kIo" secondAttribute="top" id="E5T-4m-Hf4"/>
+                            <constraint firstAttribute="bottom" secondItem="Ieg-iU-5d2" secondAttribute="bottom" constant="15" id="IiK-CL-7Bx"/>
+                            <constraint firstAttribute="trailing" secondItem="Qm1-Rx-fgy" secondAttribute="trailing" id="O3C-8V-QTX"/>
+                            <constraint firstAttribute="bottom" secondItem="Qm1-Rx-fgy" secondAttribute="bottom" id="XJ0-7M-k4h"/>
+                            <constraint firstAttribute="trailing" secondItem="Ieg-iU-5d2" secondAttribute="trailing" constant="15" id="dIF-2x-FKV"/>
+                            <constraint firstItem="Ieg-iU-5d2" firstAttribute="leading" secondItem="wUt-jq-kIo" secondAttribute="leading" constant="15" id="dj5-z4-isK"/>
+                            <constraint firstAttribute="trailing" secondItem="mAk-4j-W7u" secondAttribute="trailing" id="hBK-Pc-99n"/>
+                            <constraint firstAttribute="bottom" secondItem="mAk-4j-W7u" secondAttribute="bottom" id="kJ5-zr-fg7"/>
+                            <constraint firstItem="Qm1-Rx-fgy" firstAttribute="leading" secondItem="wUt-jq-kIo" secondAttribute="leading" id="n54-JX-iaw"/>
+                            <constraint firstAttribute="trailing" secondItem="lxX-Lx-uf3" secondAttribute="trailing" constant="10" id="nbZ-en-KyC"/>
+                            <constraint firstItem="lxX-Lx-uf3" firstAttribute="top" secondItem="wUt-jq-kIo" secondAttribute="top" constant="10" id="qXV-lF-hY5"/>
+                            <constraint firstItem="Ieg-iU-5d2" firstAttribute="top" secondItem="jy4-KD-JJr" secondAttribute="bottom" id="vAv-SO-zTy"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wUt-jq-kIo" secondAttribute="trailing" id="4Ed-D3-h3d"/>
+                <constraint firstItem="wUt-jq-kIo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cEn-Wq-art"/>
+                <constraint firstItem="wUt-jq-kIo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cg3-Vl-XkH"/>
+                <constraint firstAttribute="bottom" secondItem="wUt-jq-kIo" secondAttribute="bottom" id="oZq-gx-wh3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="182" height="246"/>
+            <connections>
+                <outlet property="buttonMore" destination="lxX-Lx-uf3" id="shI-Mi-Rr2"/>
+                <outlet property="imageCategory" destination="mAk-4j-W7u" id="e0z-g2-xnx"/>
+                <outlet property="labelArticleCount" destination="Ieg-iU-5d2" id="Sua-eJ-qgd"/>
+                <outlet property="labelTitle" destination="jy4-KD-JJr" id="waL-Mc-s2e"/>
+            </connections>
+            <point key="canvasLocation" x="238.125" y="217.6056338028169"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ellipsis" catalog="system" width="64" height="18"/>
+        <namedColor name="Gradient">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.30000001192092896" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScanCardView" customModule="app" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewScan" destination="j8A-fd-hvd" id="CDc-HU-dsV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJh-Er-7hn">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j8A-fd-hvd">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="viewfinder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QuC-EE-BEW">
+                            <rect key="frame" x="0.0" y="150" width="320" height="211"/>
+                            <color key="tintColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="QuC-EE-BEW" secondAttribute="height" multiplier="1.5:1" id="zMT-Qm-Xja"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="n1T-0J-QV4">
+                            <rect key="frame" x="147.5" y="448" width="25" height="24"/>
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="JP2-Px-een"/>
+                                <constraint firstAttribute="height" constant="25" id="oL5-2H-bO7"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hold your device over a Card so that it's clearly visible within your smartphone's screen. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="w8s-VB-ubb">
+                            <rect key="frame" x="31" y="487.5" width="258" height="50.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="j8A-fd-hvd" secondAttribute="bottom" id="5Pk-5F-JW8"/>
+                        <constraint firstItem="w8s-VB-ubb" firstAttribute="centerX" secondItem="DJh-Er-7hn" secondAttribute="centerX" id="5p5-aX-eM1"/>
+                        <constraint firstItem="QuC-EE-BEW" firstAttribute="leading" secondItem="DJh-Er-7hn" secondAttribute="leading" id="FNy-JL-qOo"/>
+                        <constraint firstAttribute="trailing" secondItem="j8A-fd-hvd" secondAttribute="trailing" id="KTs-be-RcJ"/>
+                        <constraint firstItem="w8s-VB-ubb" firstAttribute="top" secondItem="n1T-0J-QV4" secondAttribute="bottom" constant="15" id="SC1-Mf-xgZ"/>
+                        <constraint firstItem="n1T-0J-QV4" firstAttribute="centerX" secondItem="DJh-Er-7hn" secondAttribute="centerX" id="hQb-hN-aIX"/>
+                        <constraint firstItem="j8A-fd-hvd" firstAttribute="top" secondItem="DJh-Er-7hn" secondAttribute="top" id="hrl-Gd-2UR"/>
+                        <constraint firstAttribute="bottom" secondItem="w8s-VB-ubb" secondAttribute="bottom" constant="30" id="kha-Pe-MvA"/>
+                        <constraint firstItem="j8A-fd-hvd" firstAttribute="leading" secondItem="DJh-Er-7hn" secondAttribute="leading" id="oRU-j4-UtP"/>
+                        <constraint firstItem="QuC-EE-BEW" firstAttribute="centerY" secondItem="DJh-Er-7hn" secondAttribute="centerY" multiplier="0.9" id="u9C-I8-fae"/>
+                        <constraint firstAttribute="trailing" secondItem="QuC-EE-BEW" secondAttribute="trailing" id="waY-7R-czM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="DJh-Er-7hn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4Sg-r2-FG6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DJh-Er-7hn" secondAttribute="trailing" id="Jso-lL-FJm"/>
+                <constraint firstItem="DJh-Er-7hn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="LNz-Cq-Vny"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="DJh-Er-7hn" secondAttribute="bottom" id="ZGf-Ze-zst"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.25" y="153.16901408450704"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="info.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="viewfinder" catalog="system" width="64" height="56"/>
+    </resources>
+</document>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SongScanView" customModule="app" customModuleProvider="target">
+            <connections>
+                <outlet property="imageViewBG1" destination="TdH-vf-RvO" id="wRl-Q4-52Z"/>
+                <outlet property="imageViewBG2" destination="HTV-pK-RT6" id="rDU-VI-Qhm"/>
+                <outlet property="imageViewMain" destination="n92-0F-dRm" id="rNs-aU-kKc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HTV-pK-RT6">
+                    <rect key="frame" x="30" y="83" width="260" height="260"/>
+                    <color key="backgroundColor" name="Theme"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="260" id="79h-bd-MyY"/>
+                        <constraint firstAttribute="height" constant="260" id="cUa-3q-swA"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="130"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TdH-vf-RvO">
+                    <rect key="frame" x="69" y="122" width="182" height="182"/>
+                    <color key="backgroundColor" name="Theme"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="91"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n92-0F-dRm">
+                    <rect key="frame" x="96.5" y="149.5" width="127" height="127"/>
+                    <color key="backgroundColor" name="Theme"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="63.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mic.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="LY0-S2-IOO">
+                    <rect key="frame" x="130" y="182.5" width="60" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="MqY-Nd-8Vp"/>
+                        <constraint firstAttribute="width" constant="60" id="Wvd-xm-ijP"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Listening…" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCX-pM-min">
+                    <rect key="frame" x="76.5" y="375" width="167" height="44"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="32"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ro3-u5-m57">
+                    <rect key="frame" x="15" y="510" width="290" height="36"/>
+                    <string key="text">Scheme will identify any music
+playing around you</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="LY0-S2-IOO" firstAttribute="centerX" secondItem="n92-0F-dRm" secondAttribute="centerX" id="24Y-Bd-xUL"/>
+                <constraint firstItem="n92-0F-dRm" firstAttribute="width" secondItem="TdH-vf-RvO" secondAttribute="width" multiplier="0.7" id="Bcn-qe-knk"/>
+                <constraint firstItem="n92-0F-dRm" firstAttribute="centerX" secondItem="TdH-vf-RvO" secondAttribute="centerX" id="E2j-ay-ba2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ro3-u5-m57" secondAttribute="trailing" constant="15" id="Flu-tf-tWM"/>
+                <constraint firstItem="YCX-pM-min" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KzK-Oa-OZU"/>
+                <constraint firstItem="n92-0F-dRm" firstAttribute="height" secondItem="TdH-vf-RvO" secondAttribute="height" multiplier="0.7" id="L4z-a4-0Vu"/>
+                <constraint firstItem="n92-0F-dRm" firstAttribute="centerY" secondItem="TdH-vf-RvO" secondAttribute="centerY" id="Pol-ae-88D"/>
+                <constraint firstItem="TdH-vf-RvO" firstAttribute="width" secondItem="HTV-pK-RT6" secondAttribute="width" multiplier="0.7" id="PpL-Qp-P1c"/>
+                <constraint firstItem="HTV-pK-RT6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RBY-ia-PVb"/>
+                <constraint firstItem="LY0-S2-IOO" firstAttribute="centerY" secondItem="n92-0F-dRm" secondAttribute="centerY" id="bjM-7V-zc9"/>
+                <constraint firstItem="HTV-pK-RT6" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.75" id="eSC-Za-fgz"/>
+                <constraint firstItem="YCX-pM-min" firstAttribute="top" secondItem="HTV-pK-RT6" secondAttribute="bottom" constant="32" id="lR4-bw-PM7"/>
+                <constraint firstItem="Ro3-u5-m57" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="mTF-Ui-QgG"/>
+                <constraint firstItem="TdH-vf-RvO" firstAttribute="centerX" secondItem="HTV-pK-RT6" secondAttribute="centerX" id="oqQ-ff-5cJ"/>
+                <constraint firstItem="TdH-vf-RvO" firstAttribute="centerY" secondItem="HTV-pK-RT6" secondAttribute="centerY" id="siD-cV-ILS"/>
+                <constraint firstItem="TdH-vf-RvO" firstAttribute="height" secondItem="HTV-pK-RT6" secondAttribute="height" multiplier="0.7" id="tEp-w5-Y3J"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ro3-u5-m57" secondAttribute="bottom" constant="22" id="ubs-HF-OFW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="138"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mic.fill" catalog="system" width="54" height="64"/>
+        <namedColor name="Theme">
+            <color red="0.80000000000000004" green="0.0" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="FindFriends1Cell3" customModule="app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oih-LX-CZZ">
+                    <rect key="frame" x="15" y="0.0" width="290" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j9W-nl-DBy">
+                            <rect key="frame" x="0.0" y="15" width="220" height="25"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETl-0U-xkE">
+                            <rect key="frame" x="230" y="5" width="60" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="ixR-Ko-nOl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <state key="normal" title="See All">
+                                <color key="titleColor" name="Theme"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="j9W-nl-DBy" firstAttribute="leading" secondItem="Oih-LX-CZZ" secondAttribute="leading" id="9Pq-dI-2vN"/>
+                        <constraint firstAttribute="trailing" secondItem="ETl-0U-xkE" secondAttribute="trailing" id="DRo-jm-lCU"/>
+                        <constraint firstItem="j9W-nl-DBy" firstAttribute="top" secondItem="Oih-LX-CZZ" secondAttribute="top" constant="15" id="JbV-nd-NO2"/>
+                        <constraint firstItem="ETl-0U-xkE" firstAttribute="leading" secondItem="j9W-nl-DBy" secondAttribute="trailing" constant="10" id="My1-CD-ht6"/>
+                        <constraint firstAttribute="bottom" secondItem="ETl-0U-xkE" secondAttribute="bottom" id="Z4j-jp-jFp"/>
+                        <constraint firstAttribute="bottom" secondItem="j9W-nl-DBy" secondAttribute="bottom" constant="10" id="Z4l-VG-Ag9"/>
+                        <constraint firstItem="ETl-0U-xkE" firstAttribute="centerY" secondItem="j9W-nl-DBy" secondAttribute="centerY" id="nRA-Ko-obW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Oih-LX-CZZ" secondAttribute="bottom" id="1N0-0f-BDQ"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="Oih-LX-CZZ" secondAttribute="trailing" constant="15" id="22k-iT-PxM"/>
+                <constraint firstItem="Oih-LX-CZZ" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="eQF-bG-Ox1"/>
+                <constraint firstItem="Oih-LX-CZZ" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="15" id="tcn-YP-gNa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="buttonSeeAll" destination="ETl-0U-xkE" id="W46-yY-yvG"/>
+                <outlet property="labelTitle" destination="j9W-nl-DBy" id="WcZ-By-i1n"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="137"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <namedColor name="Theme">
+            <color red="0.0" green="0.32549019607843138" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

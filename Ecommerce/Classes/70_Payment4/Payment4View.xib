@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Payment4View" customModule="Ecommerce" customModuleProvider="target">
+            <connections>
+                <outlet property="textFieldPaypalEmail" destination="LJg-sM-iUi" id="ROK-nb-T7J"/>
+                <outlet property="view" destination="GSi-de-mOp" id="hp9-Nh-IMC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="GSi-de-mOp">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jHM-8U-2mY">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AB0-TX-KXi">
+                            <rect key="frame" x="0.0" y="443" width="320" height="140"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTc-0Q-q6k">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rl4-vc-98o">
+                                            <rect key="frame" x="15" y="0.0" width="50" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <state key="normal" title="Cancel">
+                                                <color key="titleColor" name="Theme"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="actionCancel:" destination="-1" eventType="touchUpInside" id="WTy-eO-mYF"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add PayPal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mdc-T9-5UY">
+                                            <rect key="frame" x="117.5" y="5" width="85" height="40"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toU-Vw-FS8">
+                                            <rect key="frame" x="274" y="0.0" width="31" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                            <state key="normal" title="Add">
+                                                <color key="titleColor" name="Theme"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="actionAdd:" destination="-1" eventType="touchUpInside" id="cSt-Tw-nUh"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="toU-Vw-FS8" secondAttribute="trailing" constant="15" id="61u-JJ-Cpo"/>
+                                        <constraint firstItem="Mdc-T9-5UY" firstAttribute="centerX" secondItem="gTc-0Q-q6k" secondAttribute="centerX" id="Pp9-hY-60r"/>
+                                        <constraint firstAttribute="bottom" secondItem="Mdc-T9-5UY" secondAttribute="bottom" constant="5" id="RJv-B1-IcR"/>
+                                        <constraint firstItem="toU-Vw-FS8" firstAttribute="top" secondItem="gTc-0Q-q6k" secondAttribute="top" id="fv7-jY-t7J"/>
+                                        <constraint firstAttribute="height" constant="50" id="kKu-ic-iED"/>
+                                        <constraint firstItem="Mdc-T9-5UY" firstAttribute="top" secondItem="gTc-0Q-q6k" secondAttribute="top" constant="5" id="ocb-Ra-ZSZ"/>
+                                        <constraint firstAttribute="bottom" secondItem="rl4-vc-98o" secondAttribute="bottom" id="tfk-sw-3c5"/>
+                                        <constraint firstAttribute="bottom" secondItem="toU-Vw-FS8" secondAttribute="bottom" id="uEG-hP-yVf"/>
+                                        <constraint firstItem="rl4-vc-98o" firstAttribute="leading" secondItem="gTc-0Q-q6k" secondAttribute="leading" constant="15" id="w2v-r3-JS9"/>
+                                        <constraint firstItem="rl4-vc-98o" firstAttribute="top" secondItem="gTc-0Q-q6k" secondAttribute="top" id="yM5-SF-nvi"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuQ-zZ-LBj">
+                                    <rect key="frame" x="15" y="60" width="290" height="45"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Paypal E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LJg-sM-iUi">
+                                            <rect key="frame" x="10" y="5" width="270" height="35"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="tertiarySystemFillColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.50196078430000002" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="LJg-sM-iUi" secondAttribute="trailing" constant="10" id="7ia-Nb-JZD"/>
+                                        <constraint firstItem="LJg-sM-iUi" firstAttribute="leading" secondItem="cuQ-zZ-LBj" secondAttribute="leading" constant="10" id="X0J-Pg-eSn"/>
+                                        <constraint firstAttribute="height" constant="45" id="nRX-3Z-aR0"/>
+                                        <constraint firstItem="LJg-sM-iUi" firstAttribute="top" secondItem="cuQ-zZ-LBj" secondAttribute="top" constant="5" id="tWF-pq-QTq"/>
+                                        <constraint firstAttribute="bottom" secondItem="LJg-sM-iUi" secondAttribute="bottom" constant="5" id="zCf-s5-5HI"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="cuQ-zZ-LBj" secondAttribute="trailing" constant="15" id="8aW-Ys-03N"/>
+                                <constraint firstItem="gTc-0Q-q6k" firstAttribute="leading" secondItem="AB0-TX-KXi" secondAttribute="leading" id="P0v-5a-YJN"/>
+                                <constraint firstItem="gTc-0Q-q6k" firstAttribute="top" secondItem="AB0-TX-KXi" secondAttribute="top" id="XCU-1g-s04"/>
+                                <constraint firstItem="cuQ-zZ-LBj" firstAttribute="leading" secondItem="AB0-TX-KXi" secondAttribute="leading" constant="15" id="jYP-On-KCa"/>
+                                <constraint firstAttribute="bottom" secondItem="cuQ-zZ-LBj" secondAttribute="bottom" constant="35" id="jgf-Rg-TBa"/>
+                                <constraint firstItem="cuQ-zZ-LBj" firstAttribute="top" secondItem="gTc-0Q-q6k" secondAttribute="bottom" constant="10" id="xZM-2N-DZe"/>
+                                <constraint firstAttribute="trailing" secondItem="gTc-0Q-q6k" secondAttribute="trailing" id="yYF-iJ-Q2j"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="AB0-TX-KXi" secondAttribute="trailing" id="7Fm-XG-bMT"/>
+                        <constraint firstItem="AB0-TX-KXi" firstAttribute="leading" secondItem="jHM-8U-2mY" secondAttribute="leading" id="JNw-sd-pbJ"/>
+                        <constraint firstAttribute="bottom" secondItem="AB0-TX-KXi" secondAttribute="bottom" constant="-15" id="Woz-KO-rrm"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dGx-xa-T7h">
+                    <rect key="frame" x="0.0" y="568" width="320" height="0.0"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dGx-xa-T7h" secondAttribute="bottom" id="A6e-J8-AzY"/>
+                <constraint firstItem="dGx-xa-T7h" firstAttribute="leading" secondItem="GSi-de-mOp" secondAttribute="leading" id="HGZ-U0-OvQ"/>
+                <constraint firstItem="jHM-8U-2mY" firstAttribute="top" secondItem="nkg-LO-Gwb" secondAttribute="top" id="Krh-xf-1Tu"/>
+                <constraint firstAttribute="trailing" secondItem="dGx-xa-T7h" secondAttribute="trailing" id="Qme-JC-oqi"/>
+                <constraint firstItem="nkg-LO-Gwb" firstAttribute="trailing" secondItem="jHM-8U-2mY" secondAttribute="trailing" id="TCi-oz-21H"/>
+                <constraint firstItem="jHM-8U-2mY" firstAttribute="bottom" secondItem="nkg-LO-Gwb" secondAttribute="bottom" id="UPH-ar-veF"/>
+                <constraint firstItem="jHM-8U-2mY" firstAttribute="leading" secondItem="nkg-LO-Gwb" secondAttribute="leading" id="dXM-0e-Ptv"/>
+                <constraint firstItem="dGx-xa-T7h" firstAttribute="top" secondItem="jHM-8U-2mY" secondAttribute="bottom" id="met-sL-qQG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="nkg-LO-Gwb"/>
+            <point key="canvasLocation" x="131.25" y="138.38028169014083"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Theme">
+            <color red="0.51800000667572021" green="0.18799999356269836" blue="0.79600000381469727" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

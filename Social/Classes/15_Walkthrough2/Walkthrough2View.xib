@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Walkthrough2View" customModule="app" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="PfA-QT-IhE" id="eD4-g4-E9p"/>
+                <outlet property="pageControl" destination="GA8-IA-WeO" id="cQ7-ex-OuV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PfA-QT-IhE">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="q8M-Du-dpD">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="o8O-hA-Hl8"/>
+                        <outlet property="delegate" destination="-1" id="lFM-U8-0d7"/>
+                    </connections>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="GA8-IA-WeO">
+                    <rect key="frame" x="15" y="15" width="55" height="37"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="GA8-IA-WeO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="Ivw-cX-2oy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PfA-QT-IhE" secondAttribute="trailing" id="YoX-QF-z68"/>
+                <constraint firstItem="PfA-QT-IhE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bU1-v6-hea"/>
+                <constraint firstItem="GA8-IA-WeO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="dBD-ma-75h"/>
+                <constraint firstAttribute="bottom" secondItem="PfA-QT-IhE" secondAttribute="bottom" id="mSv-Rm-lC8"/>
+                <constraint firstItem="PfA-QT-IhE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="p7O-kc-gib"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="128.18590704647679"/>
+        </view>
+    </objects>
+</document>

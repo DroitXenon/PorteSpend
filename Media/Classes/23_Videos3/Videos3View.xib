@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Videos3View" customModule="app" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="oGG-ZI-8T2" id="IxS-4I-FCB"/>
+                <outlet property="view" destination="9wy-I4-GYw" id="2VA-aP-6kT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="9wy-I4-GYw">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bVt-l0-j1d">
+                    <rect key="frame" x="15" y="10" width="290" height="32"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lcm-c8-xR5">
+                            <rect key="frame" x="0.0" y="0.0" width="137.5" height="32"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUi-uc-nam">
+                                    <rect key="frame" x="0.0" y="0.0" width="137.5" height="32"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <inset key="titleEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="SORT BY">
+                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="actionSortBy:" destination="-1" eventType="touchUpInside" id="5Ut-Ff-Iyt"/>
+                                    </connections>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line.horizontal.3.decrease" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aZB-OY-Wdu">
+                                    <rect key="frame" x="106.5" y="10" width="21" height="12"/>
+                                    <color key="tintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="dUi-uc-nam" secondAttribute="bottom" id="76a-jS-czh"/>
+                                <constraint firstItem="aZB-OY-Wdu" firstAttribute="centerY" secondItem="dUi-uc-nam" secondAttribute="centerY" id="Guk-j2-AbM"/>
+                                <constraint firstItem="aZB-OY-Wdu" firstAttribute="trailing" secondItem="dUi-uc-nam" secondAttribute="trailing" constant="-10" id="Mny-wc-NVj"/>
+                                <constraint firstAttribute="trailing" secondItem="dUi-uc-nam" secondAttribute="trailing" id="tPP-gJ-euL"/>
+                                <constraint firstItem="dUi-uc-nam" firstAttribute="top" secondItem="Lcm-c8-xR5" secondAttribute="top" id="tq4-K1-H4b"/>
+                                <constraint firstItem="dUi-uc-nam" firstAttribute="leading" secondItem="Lcm-c8-xR5" secondAttribute="leading" id="uun-NC-nAh"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="Border"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23T-eA-Gid">
+                            <rect key="frame" x="152.5" y="0.0" width="137.5" height="32"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6y-Rg-4Xi">
+                                    <rect key="frame" x="0.0" y="0.0" width="137.5" height="32"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <inset key="titleEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="FILTERS">
+                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="actionFilters:" destination="-1" eventType="touchUpInside" id="2tw-f2-hIb"/>
+                                    </connections>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slider.horizontal.3" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="s5U-hA-khi">
+                                    <rect key="frame" x="106.5" y="7.5" width="21" height="16.5"/>
+                                    <color key="tintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="c6y-Rg-4Xi" secondAttribute="trailing" id="N42-rh-fT9"/>
+                                <constraint firstItem="s5U-hA-khi" firstAttribute="trailing" secondItem="c6y-Rg-4Xi" secondAttribute="trailing" constant="-10" id="Q3C-zD-ahV"/>
+                                <constraint firstItem="c6y-Rg-4Xi" firstAttribute="leading" secondItem="23T-eA-Gid" secondAttribute="leading" id="WIQ-bB-aem"/>
+                                <constraint firstItem="s5U-hA-khi" firstAttribute="centerY" secondItem="c6y-Rg-4Xi" secondAttribute="centerY" id="jeN-Mj-OHL"/>
+                                <constraint firstItem="c6y-Rg-4Xi" firstAttribute="top" secondItem="23T-eA-Gid" secondAttribute="top" id="kLx-I0-nVO"/>
+                                <constraint firstAttribute="bottom" secondItem="c6y-Rg-4Xi" secondAttribute="bottom" id="n8X-4P-KVj"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="Border"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="eQj-5W-6GS"/>
+                    </constraints>
+                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oGG-ZI-8T2">
+                    <rect key="frame" x="0.0" y="57" width="320" height="511"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="A4Z-22-7XD"/>
+                        <outlet property="delegate" destination="-1" id="bak-g6-M2d"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="oGG-ZI-8T2" secondAttribute="trailing" id="2CG-aE-iRa"/>
+                <constraint firstItem="xIM-hg-WfL" firstAttribute="trailing" secondItem="bVt-l0-j1d" secondAttribute="trailing" constant="15" id="Daa-7o-KwS"/>
+                <constraint firstItem="oGG-ZI-8T2" firstAttribute="top" secondItem="bVt-l0-j1d" secondAttribute="bottom" constant="15" id="QYa-fV-mPf"/>
+                <constraint firstItem="bVt-l0-j1d" firstAttribute="leading" secondItem="xIM-hg-WfL" secondAttribute="leading" constant="15" id="ao4-ex-AsG"/>
+                <constraint firstAttribute="bottom" secondItem="oGG-ZI-8T2" secondAttribute="bottom" id="cli-CP-hoA"/>
+                <constraint firstItem="bVt-l0-j1d" firstAttribute="top" secondItem="xIM-hg-WfL" secondAttribute="top" constant="10" id="oHR-EI-M04"/>
+                <constraint firstItem="oGG-ZI-8T2" firstAttribute="leading" secondItem="9wy-I4-GYw" secondAttribute="leading" id="xYq-6t-fsK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="xIM-hg-WfL"/>
+            <point key="canvasLocation" x="138.40000000000001" y="123.68815592203899"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="line.horizontal.3.decrease" catalog="system" width="64" height="36"/>
+        <image name="slider.horizontal.3" catalog="system" width="64" height="50"/>
+        <namedColor name="Border">
+            <color red="0.55699998140335083" green="0.55699998140335083" blue="0.57599997520446777" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

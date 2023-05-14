@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="Transactions1Cell1" customModule="app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="292" height="58"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="292" height="58"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOi-E5-q95">
+                        <rect key="frame" x="0.0" y="0.0" width="292" height="58"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJb-CQ-pPD">
+                                <rect key="frame" x="10" y="14" width="101.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9JM-CC-jhZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f5E-Bw-SEj">
+                                <rect key="frame" x="242" y="16.5" width="35" height="25"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creditcard.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mgA-4p-i2I">
+                                        <rect key="frame" x="3" y="5" width="29" height="15"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="mgA-4p-i2I" secondAttribute="bottom" constant="3" id="F0W-bN-2UL"/>
+                                    <constraint firstAttribute="height" constant="25" id="Ptd-QG-c79"/>
+                                    <constraint firstAttribute="trailing" secondItem="mgA-4p-i2I" secondAttribute="trailing" constant="3" id="VTM-LU-gIv"/>
+                                    <constraint firstItem="mgA-4p-i2I" firstAttribute="top" secondItem="f5E-Bw-SEj" secondAttribute="top" constant="3" id="faq-ap-yAA"/>
+                                    <constraint firstAttribute="width" constant="35" id="nq7-D6-tzS"/>
+                                    <constraint firstItem="mgA-4p-i2I" firstAttribute="leading" secondItem="f5E-Bw-SEj" secondAttribute="leading" constant="3" id="s5R-oM-Mzp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="f5E-Bw-SEj" secondAttribute="trailing" constant="15" id="6fL-HI-IUD"/>
+                            <constraint firstItem="WJb-CQ-pPD" firstAttribute="centerY" secondItem="dOi-E5-q95" secondAttribute="centerY" id="bW3-2q-2in"/>
+                            <constraint firstItem="WJb-CQ-pPD" firstAttribute="leading" secondItem="dOi-E5-q95" secondAttribute="leading" constant="10" id="cSQ-ev-Eyz"/>
+                            <constraint firstItem="f5E-Bw-SEj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WJb-CQ-pPD" secondAttribute="trailing" constant="10" id="xvc-JO-W9w"/>
+                            <constraint firstItem="f5E-Bw-SEj" firstAttribute="centerY" secondItem="dOi-E5-q95" secondAttribute="centerY" id="z4E-TY-daA"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="dOi-E5-q95" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6Lz-QV-S3h"/>
+                <constraint firstAttribute="trailing" secondItem="dOi-E5-q95" secondAttribute="trailing" id="S5x-K6-aa7"/>
+                <constraint firstItem="dOi-E5-q95" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TC7-cQ-4sI"/>
+                <constraint firstAttribute="bottom" secondItem="dOi-E5-q95" secondAttribute="bottom" id="Zqv-Cv-e95"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="292" height="58"/>
+            <connections>
+                <outlet property="imageCard" destination="mgA-4p-i2I" id="eP2-3b-c8E"/>
+                <outlet property="labelCardNumber" destination="WJb-CQ-pPD" id="Y0t-yf-Abf"/>
+                <outlet property="viewBackground" destination="dOi-E5-q95" id="VgL-ae-krO"/>
+                <outlet property="viewCard" destination="f5E-Bw-SEj" id="v6s-lu-rhd"/>
+            </connections>
+            <point key="canvasLocation" x="97.5" y="133.09859154929578"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="creditcard.fill" catalog="system" width="64" height="44"/>
+    </resources>
+</document>

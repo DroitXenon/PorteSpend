@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="Feed3Cell1" customModule="app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a0T-c2-cG2">
+                        <rect key="frame" x="15" y="10" width="338" height="50"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GUO-2g-tGt">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GUO-2g-tGt" secondAttribute="height" id="qYj-rP-bYM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y5g-kF-jyH">
+                                <rect key="frame" x="60" y="0.0" width="143" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rCg-tD-h20">
+                                <rect key="frame" x="213" y="7.5" width="125" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiY-L0-bzG">
+                                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="GiY-L0-bzG" secondAttribute="height" id="xKc-Rr-WIH"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" image="photo.fill" catalog="system"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <real key="value" value="17.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIT-wk-X0d">
+                                        <rect key="frame" x="45" y="0.0" width="35" height="35"/>
+                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" image="video.fill" catalog="system"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <real key="value" value="17.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qv-xg-VDT">
+                                        <rect key="frame" x="90" y="0.0" width="35" height="35"/>
+                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" image="mappin.and.ellipse" catalog="system"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <real key="value" value="17.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="KFn-Bl-O9V"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="PM6-n4-FCb"/>
+                            <constraint firstItem="rCg-tD-h20" firstAttribute="centerY" secondItem="a0T-c2-cG2" secondAttribute="centerY" id="WCZ-Ei-w4B"/>
+                            <constraint firstItem="GUO-2g-tGt" firstAttribute="leading" secondItem="a0T-c2-cG2" secondAttribute="leading" id="Wg0-F3-dcc"/>
+                            <constraint firstAttribute="trailing" secondItem="rCg-tD-h20" secondAttribute="trailing" id="XWn-w6-lSd"/>
+                            <constraint firstItem="GUO-2g-tGt" firstAttribute="top" secondItem="a0T-c2-cG2" secondAttribute="top" id="YVi-b2-Xkb"/>
+                            <constraint firstItem="rCg-tD-h20" firstAttribute="leading" secondItem="y5g-kF-jyH" secondAttribute="trailing" constant="10" id="ejt-VG-3ER"/>
+                            <constraint firstItem="y5g-kF-jyH" firstAttribute="top" secondItem="a0T-c2-cG2" secondAttribute="top" id="fbY-KY-mkp"/>
+                            <constraint firstAttribute="bottom" secondItem="GUO-2g-tGt" secondAttribute="bottom" id="gkE-ql-DWp"/>
+                            <constraint firstAttribute="bottom" secondItem="y5g-kF-jyH" secondAttribute="bottom" id="h4h-LX-rcZ"/>
+                            <constraint firstItem="y5g-kF-jyH" firstAttribute="leading" secondItem="GUO-2g-tGt" secondAttribute="trailing" constant="10" id="hBA-6q-Wqi"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q8q-44-QlC">
+                        <rect key="frame" x="0.0" y="69" width="368" height="1"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemFillColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.50196078430000002" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Hcf-MS-vxA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="a0T-c2-cG2" secondAttribute="bottom" constant="10" id="CaV-hk-WEw"/>
+                    <constraint firstAttribute="bottom" secondItem="Q8q-44-QlC" secondAttribute="bottom" id="Jcl-SS-tSb"/>
+                    <constraint firstItem="a0T-c2-cG2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="NkM-qF-v3e"/>
+                    <constraint firstItem="a0T-c2-cG2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="gl2-MZ-wkj"/>
+                    <constraint firstAttribute="trailing" secondItem="a0T-c2-cG2" secondAttribute="trailing" constant="15" id="lqV-MU-nCe"/>
+                    <constraint firstItem="Q8q-44-QlC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nBr-Jf-2sn"/>
+                    <constraint firstAttribute="trailing" secondItem="Q8q-44-QlC" secondAttribute="trailing" id="owy-PQ-gQL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="buttonLocation" destination="1qv-xg-VDT" id="hVj-vv-am2"/>
+                <outlet property="buttonPhotos" destination="GiY-L0-bzG" id="J2z-Xd-PrJ"/>
+                <outlet property="buttonVideo" destination="OIT-wk-X0d" id="m3K-0c-ezJ"/>
+                <outlet property="imageViewProfile" destination="GUO-2g-tGt" id="p7K-q9-iWu"/>
+                <outlet property="textFieldStatus" destination="y5g-kF-jyH" id="7yJ-X8-MH1"/>
+            </connections>
+            <point key="canvasLocation" x="166.66666666666669" y="162.72321428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mappin.and.ellipse" catalog="system" width="58" height="64"/>
+        <image name="photo.fill" catalog="system" width="64" height="46"/>
+        <image name="video.fill" catalog="system" width="64" height="40"/>
+    </resources>
+</document>

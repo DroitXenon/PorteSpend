@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Walkthrough5View" customModule="app" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="Sgl-aZ-NLF" id="c4i-Ag-qDP"/>
+                <outlet property="pageControl" destination="DoN-LY-2jO" id="ONV-OO-mFL"/>
+                <outlet property="view" destination="ka1-Dk-Vdg" id="CrK-uY-7gr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ka1-Dk-Vdg">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Sgl-aZ-NLF">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="497"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fgH-fp-wzF">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="0XE-Db-KV3"/>
+                        <outlet property="delegate" destination="-1" id="cgX-4o-qnE"/>
+                    </connections>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="DoN-LY-2jO">
+                    <rect key="frame" x="132.5" y="519" width="55" height="37"/>
+                </pageControl>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6C-WW-pMM">
+                    <rect key="frame" x="273" y="521.5" width="32" height="32"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Skip">
+                        <color key="titleColor" name="Theme"/>
+                    </state>
+                    <connections>
+                        <action selector="actionSkip:" destination="-1" eventType="touchUpInside" id="KNU-6y-WeD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Fv6-qJ-tdp" firstAttribute="trailing" secondItem="A6C-WW-pMM" secondAttribute="trailing" constant="15" id="6UV-cp-Hll"/>
+                <constraint firstItem="Sgl-aZ-NLF" firstAttribute="leading" secondItem="Fv6-qJ-tdp" secondAttribute="leading" id="8NK-j0-IKB"/>
+                <constraint firstItem="DoN-LY-2jO" firstAttribute="top" secondItem="Sgl-aZ-NLF" secondAttribute="bottom" constant="22" id="CF5-fX-4X0"/>
+                <constraint firstItem="DoN-LY-2jO" firstAttribute="centerX" secondItem="ka1-Dk-Vdg" secondAttribute="centerX" id="Fc9-78-k3v"/>
+                <constraint firstItem="Fv6-qJ-tdp" firstAttribute="bottom" secondItem="DoN-LY-2jO" secondAttribute="bottom" constant="12" id="KcQ-rN-dtc"/>
+                <constraint firstItem="Sgl-aZ-NLF" firstAttribute="top" secondItem="Fv6-qJ-tdp" secondAttribute="top" id="Rgz-Ls-2GV"/>
+                <constraint firstItem="A6C-WW-pMM" firstAttribute="centerY" secondItem="DoN-LY-2jO" secondAttribute="centerY" id="fdW-9b-Tkx"/>
+                <constraint firstItem="Fv6-qJ-tdp" firstAttribute="trailing" secondItem="Sgl-aZ-NLF" secondAttribute="trailing" id="ks2-NG-TfE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Fv6-qJ-tdp"/>
+            <point key="canvasLocation" x="138.40000000000001" y="128.18590704647679"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Theme">
+            <color red="0.0" green="0.32549019607843138" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Categories4View" customModule="app" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="IfL-gg-dTc" id="hFv-ej-KEn"/>
+                <outlet property="view" destination="LeT-Sl-j71" id="PcA-QB-eVe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="LeT-Sl-j71">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IfL-gg-dTc">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="XCC-AV-krY"/>
+                        <outlet property="delegate" destination="-1" id="UwV-yT-vw0"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="IfL-gg-dTc" firstAttribute="leading" secondItem="bs1-BO-VY5" secondAttribute="leading" id="RzM-VM-I08"/>
+                <constraint firstItem="IfL-gg-dTc" firstAttribute="top" secondItem="bs1-BO-VY5" secondAttribute="top" id="cEB-Q3-5ug"/>
+                <constraint firstItem="bs1-BO-VY5" firstAttribute="bottom" secondItem="IfL-gg-dTc" secondAttribute="bottom" id="cXp-l0-0Gp"/>
+                <constraint firstItem="bs1-BO-VY5" firstAttribute="trailing" secondItem="IfL-gg-dTc" secondAttribute="trailing" id="r8t-7H-ntP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="bs1-BO-VY5"/>
+            <point key="canvasLocation" x="132" y="154"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditPhotoView" customModule="app" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="8Hh-1S-mHX" id="OSQ-3F-IOI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Hh-1S-mHX">
+                    <rect key="frame" x="0.0" y="71" width="320" height="369"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="bXT-sA-8vK">
+                    <rect key="frame" x="15" y="519" width="290" height="34"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3X-P2-RVU">
+                            <rect key="frame" x="0.0" y="0.0" width="48.5" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="xce-Ib-SRB"/>
+                            </constraints>
+                            <color key="tintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="photo.fill" catalog="system">
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22"/>
+                            </state>
+                            <connections>
+                                <action selector="actionGallery:" destination="-1" eventType="touchUpInside" id="gjx-V0-Tgr"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rR7-rj-TWK">
+                            <rect key="frame" x="60.5" y="0.0" width="48.5" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="Lwf-jt-uNs"/>
+                            </constraints>
+                            <color key="tintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="slider.horizontal.3" catalog="system">
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22"/>
+                            </state>
+                            <connections>
+                                <action selector="actionFilter:" destination="-1" eventType="touchUpInside" id="Z1g-Ji-742"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCr-Li-MiS">
+                            <rect key="frame" x="121" y="0.0" width="48" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="zS6-Q0-64U"/>
+                            </constraints>
+                            <color key="tintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="crop" catalog="system">
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22"/>
+                            </state>
+                            <connections>
+                                <action selector="actionCrop:" destination="-1" eventType="touchUpInside" id="0cG-aJ-xhy"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qeo-xg-OOo">
+                            <rect key="frame" x="181" y="0.0" width="48.5" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="58R-ow-bWH"/>
+                            </constraints>
+                            <color key="tintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="textformat.size" catalog="system">
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22"/>
+                            </state>
+                            <connections>
+                                <action selector="actionTextEdit:" destination="-1" eventType="touchUpInside" id="5oI-Kl-5At"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mM6-M5-W3R">
+                            <rect key="frame" x="241.5" y="0.0" width="48.5" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="ZWM-Qr-yF9"/>
+                            </constraints>
+                            <color key="tintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="ellipsis" catalog="system">
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22"/>
+                            </state>
+                            <connections>
+                                <action selector="actionMore:" destination="-1" eventType="touchUpInside" id="wgb-hO-0Bf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="8Hh-1S-mHX" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="0.9" id="06K-eQ-WJQ"/>
+                <constraint firstItem="8Hh-1S-mHX" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.65" id="3rY-eK-OqF"/>
+                <constraint firstItem="bXT-sA-8vK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="X4b-YE-8TM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bXT-sA-8vK" secondAttribute="trailing" constant="15" id="jjP-VI-KPZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8Hh-1S-mHX" secondAttribute="trailing" id="oWH-W2-e4o"/>
+                <constraint firstItem="8Hh-1S-mHX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xnc-bt-aGn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bXT-sA-8vK" secondAttribute="bottom" constant="15" id="yGQ-hf-3Cl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="crop" catalog="system" width="64" height="60"/>
+        <image name="ellipsis" catalog="system" width="64" height="18"/>
+        <image name="photo.fill" catalog="system" width="64" height="46"/>
+        <image name="slider.horizontal.3" catalog="system" width="64" height="50"/>
+        <image name="textformat.size" catalog="system" width="64" height="40"/>
+    </resources>
+</document>
